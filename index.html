@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            display: flex;
+            min-height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+            background: linear-gradient(rgb(248, 49, 238), blue);
+
+        }
+
+        .leftbox {
+            background-color: #f9f9fd36;
+            min-height: 90vh;
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 15px;
+
+        }
+
+        #size {
+            height: 170px;
+            width: 300px;
+        }
+
+        .rightbox {
+            background-color: brown;
+            min-height: 90vh;
+            width: 45vw;
+        }
+
+        #i1 {
+            height: 20px;
+        }
+
+        .i2 {
+            border-radius: 50%;
+            width: 22px
+        }
+
+        .name {
+            color: white;
+            font-size: larger;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px;
+            border: 2px solid white;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .about .img {
+            background-image: url(img.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 147px;
+            border: 3px solid white;
+        }
+
+        .content {
+            color: white;
+            padding-top: 46px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        .cbox {
+            display: flex;
+            align-content: space-between;
+        }
+
+        .language {
+            color: white;
+            margin-top: 10px;
+        }
+
+        #i1 {
+            padding-right: 1px;
+        }
+    </style>
+    <style>
+        .rightbox {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .edu {
+            background-color: #1d46464f;
+            width: 80%;
+            height: 30%;
+            border: 2px solid blue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skils {
+            background-color: #1d46464f;
+            width: 80%;
+            height: 30%;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+
+        .skl {
+            display: flex;
+            margin-top: 2px;
+        }
+
+        .hobby {
+            background-color: #1d46464f;
+            width: 80%;
+            height: 30%;
+            border: 2px solid blue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head {
+            width: 40%;
+            background-color: blue;
+            border-radius: 25px;
+            height: 35px;
+            padding: 4px;
+            text-align: -moz-center;
+            color: white;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            ;
+        }
+
+        .edudec {
+            align-self: center;
+            margin: 40px;
+        }
+
+        .rate1 {
+            width: 50%;
+            height: 20px;
+            margin: 0px 20px;
+            border: 1px solid white;
+            border-radius: 11px;
+        }
+
+        #m2 {
+            height: 23px;
+            margin-right: 10px;
+        }
+
+        .rate1 .subrate1 {
+            width: 70%;
+            height: 18px;
+            border: 1px solid white;
+            border-radius: 11px;
+            background-color: #c700ff;
+        }
+
+        .rate1 .subrate2 {
+            width: 90%;
+            height: 18px;
+            border: 1px solid white;
+            border-radius: 11px;
+            background-color: #c700ff;
+        }
+
+        .rate1 .subrate3 {
+            width: 70%;
+            height: 18px;
+            border: 1px solid white;
+            border-radius: 11px;
+            background-color: #c700ff;
+        }
+
+        .rate1 .subrate4 {
+            width: 75%;
+            height: 18px;
+            border: 1px solid white;
+            border-radius: 11px;
+            background-color: #c700ff;
+        }
+
+        .rate1 .subrate5 {
+            width: 75%;
+            height: 18px;
+            border: 1px solid white;
+            border-radius: 11px;
+            background-color: #c700ff;
+        }
+
+        .subhby {
+            align-self: center;
+
+        }
+
+        .hby {
+            display: flex;
+            margin-top: 20px;
+            
+        }
+
+        .hby img {
+            height: 30px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+
+
+        <div class="leftbox">
+            <div class="name" id='size'>
+
+                <h2>Asad</h2>
+                <h2>Subhani</h2>
+                <h3 style="color: #0000ff6e;">[ Software Engineer ]</h3>
+            </div>
+
+            <div class="about" id='size'>
+                <div class="img"></div>
+                <div class="content">
+                    <h2>About Me</h2>
+                    <p>My passion is my future and i love my future. </p>
+                    <p>Focused, determined and loyal with work. </p>
+                </div>
+            </div>
+            <div class="contact" id='size'>
+                <div class="cbox">
+                    <img id='i1' src="email.png" alt="" style="padding-right: 30px;">
+                    <p>asadsubhani77@gmail.com</p>
+
+                </div>
+                <div class="cbox">
+                    <img id='i1' src="phone-call.png" alt="" style="padding-right: 30px;">
+                    <p>03435701060</p>
+                </div>
+                <div class="cbox">
+                    <img id='i1' class="i2" src="web1.jpg" alt="">
+                    <p style="padding-left: 30px;">MyHome-Official.com</p>
+                </div>
+            </div>
+            <div class="language" id='size'>
+                <h2>Language</h2>
+                <div class="leng" style="padding: 20px 30px;">
+                    <div class="cbox">
+                        <h3 style="padding-right: 60px;">Urdu</h3>
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                    </div>
+                    <div class="cbox">
+                        <h3 style="padding-right: 43px;">English</h3>
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+                        <img src="star1.jpg" alt="" id="i1">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="rightbox">
+
+            <div class="edu">
+                <div class="head">
+                    <h2> <u> Academic Record </u></h2>
+                </div>
+                <div class="edudec">
+                    <h2>FSc. (Pre-Engineering)</h2>
+                    <p>[ 2015 - 2017 ]</p>
+                    <h3>Govt. Science College Wahdat Roard <b>Lahore</b></h3>
+                    <p>( 809/1100 )</p>
+                </div>
+            </div>
+            <div class="skils">
+                <div class="head">
+                    <h2> <u> Skills </u></h2>
+                </div>
+                <div class="edudec">
+                    <div class="skl">
+                        <img id='m2' src="sql.png" alt="sql server logo">
+                        <h3>SQL Server</h3>
+                        <div class="rate1">
+                            <div class="subrate1"></div>
+
+                        </div>
+                        <p>70%</p>
+                    </div>
+                    <div class="skl">
+                        <img id='m2' src="html-5-logotype.png" alt=" html logo">
+                        <h3>HTML-5</h3>
+                        <div class="rate1">
+                            <div class="subrate2"></div>
+                        </div>
+                        <p>90%</p>
+                    </div>
+                    <div class="skl">
+                        <img id='m2' src="css-3.png" alt="css logo">
+                        <h3>CSS-3</h3>
+                        <div class="rate1">
+                            <div class="subrate3"></div>
+                        </div>
+                        <p>70%</p>
+                    </div>
+                    <div class="skl">
+                        <img id='m2' src="bootstrap.png" alt="bootstrap logo">
+                        <h3>Bootstrap</h3>
+                        <div class="rate1">
+                            <div class="subrate4"></div>
+                        </div>
+                        <p>75%</p>
+                    </div>
+                    <div class="skl">
+                        <img id='m2' src="javascript.png" alt="">
+                        <h3>JavaScript</h3>
+                        <div class="rate1">
+                            <div class="subrate5"></div>
+                        </div>
+                        <p>75%</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hobby">
+                <div class="head">
+                    <h2> <u>Hobby </u></h2>
+                </div>
+                <div class="subhby">
+                    <div class="hby">
+                        <img style="height: 30px;" src="research.png" alt="research logo">
+                        <h3>Research</h3>
+                    </div>
+                    <div class="hby">
+                        <img style="height: 30px;" src="social-care.png" alt="social-care logo">
+                        <h3>Social Helping</h3>
+                    </div>
+                    <div class="hby">
+                        <img style="height: 30px;" src="badminton-equipment.png" alt="badminton-equipment logo">
+                        <h3>Badminton</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
